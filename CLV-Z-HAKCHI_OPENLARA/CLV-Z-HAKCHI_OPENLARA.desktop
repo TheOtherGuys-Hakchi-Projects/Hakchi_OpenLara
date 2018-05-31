@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=/bin/sh /var/games/CLV-Z-HAKCHI_OPENLARA/hakchi_OPENLARA.sh
+Exec=/bin/sh /var/games/CLV-Z-HAKCHI_OPENLARA/hakchi_OpenLara.sh
 Path=/var/lib/clover/profiles/0/CLV-Z-HAKCHI_OPENLARA
 Name=Hakchi OpenLara
 Icon=/var/games/CLV-Z-HAKCHI_OPENLARA/CLV-Z-HAKCHI_OPENLARA.png
@@ -9,10 +9,11 @@ Icon=/var/games/CLV-Z-HAKCHI_OPENLARA/CLV-Z-HAKCHI_OPENLARA.png
 Code=CLV-Z-HAKCHI_OPENLARA
 TestID=0
 ID=0
-Players=1
-Simultaneous=0
-ReleaseDate=1900-01-01
+Players=2
+Simultaneous=1
+ReleaseDate=1996-10-01
 SaveCount=0
 SortRawTitle=_hakchi OPENLARA
-SortRawPublisher=ID
-Copyright=hakchi2 ©2018 Swingflip
+SortRawPublisher=edios interactive
+Copyright=OpenLara by XProger
+
