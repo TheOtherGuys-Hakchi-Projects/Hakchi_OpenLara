@@ -14,18 +14,20 @@ if [ -f "/usr/share/games/$GameName/$GameName.desktop" ]; then
         ok=1
 fi
 
+echo "$OPENLARAPortableFiles/PSXDATA/GYM.PSX" && exit
+
 #check for gamefiles...
-[ -f "$OPENLARAPortableFiles/DATA/GYM.PHD"] && filedetect=1
-[ -f "$OPENLARAPortableFiles/GYM.PHD"] && filedetect=1
-[ -f "$OPENLARAPortableFiles/PSXDATA/GYM.PSX"] && filedetect=1
-#[ -f "$OPENLARAPortableFiles/DATA/GYM.SAT"] && filedetect=1 #SATURN (Not support yet)
-[ -f "$OPENLARAPortableFiles/data/ASSAULT.TR2"] && filedetect=1
-[ -f "$OPENLARAPortableFiles/assault.TR2"] && filedetect=1
-[ -f "$OPENLARAPortableFiles/DATA/ASSAULT.PSX"] && filedetect=1
-[ -f "$OPENLARAPortableFiles/data/JUNGLE.TR2"] && filedetect=1
-[ -f "$OPENLARAPortableFiles/DATA/JUNGLE.PSX"] && filedetect=1
-[ -f "$OPENLARAPortableFiles/level/1/GYM.PHD"] && filedetect=1
-[ -f "$OPENLARAPortableFiles/level/1/GYM.PSX"] && filedetect=1
+[ -f "$OPENLARAPortableFiles/DATA/GYM.PHD" ] && filedetect=1
+[ -f "$OPENLARAPortableFiles/GYM.PHD" ] && filedetect=1
+[ -f "$OPENLARAPortableFiles/PSXDATA/GYM.PSX" ] && filedetect=1
+#[ -f "$OPENLARAPortableFiles/DATA/GYM.SAT" ] && filedetect=1 #SATURN (Not support yet)
+[ -f "$OPENLARAPortableFiles/data/ASSAULT.TR2" ] && filedetect=1
+[ -f "$OPENLARAPortableFiles/assault.TR2" ] && filedetect=1
+[ -f "$OPENLARAPortableFiles/DATA/ASSAULT.PSX" ] && filedetect=1
+[ -f "$OPENLARAPortableFiles/data/JUNGLE.TR2" ] && filedetect=1
+[ -f "$OPENLARAPortableFiles/DATA/JUNGLE.PSX" ] && filedetect=1
+[ -f "$OPENLARAPortableFiles/level/1/GYM.PHD" ] && filedetect=1
+[ -f "$OPENLARAPortableFiles/level/1/GYM.PSX" ] && filedetect=1
 
 if [ "$ok" == 1 ] && [ "$filedetect" == 1 ]; then
    decodepng "$OPENLARATrueDir/Hakchi_OpenLara_assets/openlarasplash-min.png" > /dev/fb0;
