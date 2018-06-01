@@ -18,11 +18,16 @@ echo "$OPENLARAPortableFiles/PSXDATA/GYM.PSX" && exit
 
 #check for gamefiles...
 [ -f "$OPENLARAPortableFiles/DATA/GYM.PHD" ] && filedetect=1
+[ -f "$OPENLARAPortableFiles/data/gym.phd" ] && filedetect=1
 [ -f "$OPENLARAPortableFiles/GYM.PHD" ] && filedetect=1
+[ -f "$OPENLARAPortableFiles/gym.phd" ] && filedetect=1
 [ -f "$OPENLARAPortableFiles/PSXDATA/GYM.PSX" ] && filedetect=1
+[ -f "$OPENLARAPortableFiles/psxdata/gym.psx" ] && filedetect=1
 #[ -f "$OPENLARAPortableFiles/DATA/GYM.SAT" ] && filedetect=1 #SATURN (Not support yet)
 [ -f "$OPENLARAPortableFiles/data/ASSAULT.TR2" ] && filedetect=1
+[ -f "$OPENLARAPortableFiles/data/assault.tr2" ] && filedetect=1
 [ -f "$OPENLARAPortableFiles/assault.TR2" ] && filedetect=1
+[ -f "$OPENLARAPortableFiles/ASSAULT.TR2" ] && filedetect=1
 [ -f "$OPENLARAPortableFiles/DATA/ASSAULT.PSX" ] && filedetect=1
 [ -f "$OPENLARAPortableFiles/data/JUNGLE.TR2" ] && filedetect=1
 [ -f "$OPENLARAPortableFiles/DATA/JUNGLE.PSX" ] && filedetect=1
