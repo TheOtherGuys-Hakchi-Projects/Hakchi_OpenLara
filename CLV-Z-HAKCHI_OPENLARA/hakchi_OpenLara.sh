@@ -14,8 +14,6 @@ if [ -f "/usr/share/games/$GameName/$GameName.desktop" ]; then
         ok=1
 fi
 
-echo "$OPENLARAPortableFiles/PSXDATA/GYM.PSX" && exit
-
 #check for gamefiles...
 [ -f "$OPENLARAPortableFiles/DATA/GYM.PHD" ] && filedetect=1
 [ -f "$OPENLARAPortableFiles/data/gym.phd" ] && filedetect=1
