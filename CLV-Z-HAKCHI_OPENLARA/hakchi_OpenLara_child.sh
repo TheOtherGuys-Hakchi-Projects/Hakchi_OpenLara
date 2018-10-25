@@ -4,7 +4,7 @@ source /etc/preinit
 script_init
 
 OpenLaraTrueDir="$(dirname `readlink -f "$0"`)"
-OPENLARAPortableFiles="$OPENLARATrueDir/OpenLara_files"
+OPENLARAPortableFiles="$OpenLaraTrueDir/OpenLara_files"
 ok=1 #Legacy... For now.
 filedetect=0
 
@@ -36,14 +36,16 @@ export HOME
 [ -f "$OPENLARAPortableFiles/level/1/GYM.PSX" ] && filedetect=1
 
 if [ "$ok" == 1 ] && [ "$filedetect" == 1 ]; then
-  decodepng "$OPENLARATrueDir/Hakchi_OpenLara_assets/openlarasplash-min.png" > /dev/fb0;
+  decodepng "$OpenLaraTrueDir/Hakchi_OpenLara_assets/openlarasplash-min.png" > /dev/fb0;
   mkdir -p "$HOME/.openlara"
   [ -f "$HOME/save.sram" ] || touch "$HOME/save.sram" #To prevent save state manager to wipe the saves/configs
   sleep 1 #Engine is so well built the splash needs to display for at least a second for looks...
   cd "$OPENLARAPortableFiles"
   chmod 755 "$OPENLARAPortableFiles/OpenLara"
   $OPENLARAPortableFiles/OpenLara #Execute engine.
+  uistart
 else
-  decodepng "$OPENLARATrueDir/Hakchi_OpenLara_assets/openlaraerror_files-min.png" > /dev/fb0;
+  decodepng "$OpenLaraTrueDir/Hakchi_OpenLara_assets/openlaraerror_files-min.png" > /dev/fb0;
   sleep 5
+  uistart
 fi
